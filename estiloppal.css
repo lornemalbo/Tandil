@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Concert+One&family=Oi&family=Parisienne&family=Paytone+One&family=Squada+One&family=Ballet&family=Dancing+Script&family=Krona+One&family=Lobster&family=Reggae+One&display=swap');
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: content-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+#head{
+    width:100%;
+    height: 200px;
+    position:fixed;
+    z-index: 1000;
+    }
+
+.menu_uno{
+    margin-left:2.5%;
+    width: 95%;
+    height: 15%;
+    background-color: rgba(240, 150, 150, 0.795);
+    }
+
+.banner{
+    width: 95%;
+    background-color: white;
+    margin-left:2.5%;
+}   
+
+.banner a img{
+    width:150px;
+    margin-left:5%;
+    }
+  
+  .menu_uno a{
+      width: 20%;
+      height: 20px;
+      margin-right:1px;
+      box-shadow: rgb(34, 34, 33) 3px 1px 1px;
+      background-color: rgba(236, 152, 152, 0.205);
+      /*texto*/
+      text-decoration: none;
+      font-family:serif;
+      font-size:13px;
+      color:white;
+
+  }
+
+.menu_dos{
+    position:absolute;
+    width: 100%;
+    height: 30%;
+    color:rgba(7, 1, 1, 0);
+    left:55%;
+    bottom:67%;
+}
+
+    .menu_dos a{
+      width: 30%;
+      height: 30px;
+      margin-left:15px;
+      background-color: rgba(129, 79, 79, 0);
+      /*texto*/
+      text-decoration: none;
+      font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      font-size:25px;
+      color:rgb(24, 22, 22);
+      text-shadow: rgb(255, 255, 255) 1px 1px 1px;
+    }
+
+    /*SLIDE*/
+ 
+ 
+.slide{
+      padding-top: 10%;
+            
+  }
+
+  .slider{
+      width:100%;
+      height: 800px;
+      
+  }
+
+  .slider ul li{
+      opacity: 0;
+      transition-duration:1.5s;
+  }
+
+  .slider ul li img{
+      width: 100%;
+      height: 800px;
+      position:absolute;
+      object-fit: cover;
+      
+  }
+
+
+  .itms{
+      width: 40px;
+      height: 40px;
+      display:inline-block;
+      position:fixed;
+      bottom:60%;
+     
+      border:solid 4px #f09696cb;
+      background-color:white;
+      
+      font-family: paytone one;
+      font-size: 30px;
+      text-align:start;
+      transition-duration: 1s;
+    }
+
+    .itms:hover{
+       width: 300px;
+       text-align:center;
+       font-size:30px;
+       opacity:1;
+    }
+
+    .itms li ul{
+        position:absolute;
+        opacity:0;
+        
+        transition-duration: 0.6s;
+        top:15px;
+        font-size: 8px;
+        color:rgba(255, 255, 255, 0);
+    }
+
+    .itms li ul:hover{
+        opacity:1;
+        font-size: 25px;
+        text-align:start;
+    }
+
+    .itms li ul li a{
+        color:rgb(201, 201, 36);
+        text-shadow:rgba(0, 0, 0, 0.692) 1px 1px 1px ;
+        transition-duration:0.1s;
+        z-index: 1000;
+    }
+
+    .itms li ul li a:hover{
+        color:orange;
+        font-size:26px;
+    }
+
+        
+           
+#sld4{
+    animation: cambiouno 6s infinite alternate;
+    
+}
+
+
+#sld3{
+    animation: cambiodos 6s infinite alternate;
+    
+}
+
+#sld2{
+    animation: cambiotres 6s infinite alternate;
+    
+}
+
+#sld1{
+    animation: cambiocuatro 6s infinite alternate;
+    
+}
+
+.slider ul li p{
+    position:absolute;
+    padding-left:4%;
+    font-family:paytone one;
+    font-size: 100px;
+    z-index: 1000;
+    color:rgb(201, 201, 36);
+}
+
+@keyframes cambiouno{
+    
+
+    0%  {opacity:1}
+    30% {opacity:1}
+
+    30% {opacity:0}
+    100%{opacity:0}
+}
+
+@keyframes cambiodos{
+
+    0%  {opacity:0}
+    25% {opacity:0}
+
+    25% {opacity:1}
+    55% {opacity:1}
+
+    55% {opacity:0}
+    100%{opacity:0}
+}    
+
+@keyframes cambiotres{
+    0%  {opacity:0}
+    50% {opacity:0}
+
+    50% {opacity:1}
+    80% {opacity:1}
+
+    80% {opacity:0}
+    100%{opacity:0}
+}    
+
+@keyframes cambiocuatro{
+     0% {opacity:0}
+    75% {opacity:0}
+
+     75% {opacity:1}
+    100% {opacity:1}
+}
+
+
+.frase p{
+    text-align: center;
+    font-family:parisienne;
+    font-size: 5em;
+}
+
+.frase div p{
+    margin-left:8%;
+    display: inline-block;
+    transition-delay: 0.2s;
+    transition-duration: 0.7s;
+    opacity: 0;
+}
+
+.frase div p:target{
+    opacity: 1;
+}
+
+/*SECCION IMAGENES*/
+
+
+.imagenes{
+    width: 100%;
+    background:-moz-linear-gradient(top,white, rgba(240, 173, 162, 0.568));
+    background:-webkit-linear-gradient(top,white, rgba(240, 173, 162, 0.568));
+    }
+
+#imagenes{
+    width:300px;
+    height:200px;
+    }
+
+.imagenes div{
+    position:relative;
+    display: inline-block;
+    margin-left:8% ;
+    margin-top:10%;
+    background: rgb(0, 0, 0);
+   
+}
+
+.imagenes div a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius:20px;
+    opacity:0.9;
+    transition-duration: 0.4s;
+    position:relative;
+}
+
+.imagenes div a img:hover{
+    opacity:1;
+}
+
+.imagenes div a h2{
+    font-family:paytone one;
+    color:rgb(131, 183, 204);
+}
+
+.paseo{
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    margin-top:70px;
+    background: rgb(75, 141, 172);
+    text-overflow: unset;    
+}
+
+    #img1{
+       position:relative;
+       bottom:100px;
+       right: 50px;
+             
+}
+       #_img1{
+         font-family:lobster;
+         font-size: 150px;
+         
+         position:absolute;
+         left:2%;
+         width: 100%;
+         color:rgba(172, 205, 221, 0.5);
+         text-shadow: rgb(255, 255, 255) 40px 40px 1px;
+       
+       }
+
+    #img2{
+       position:relative;
+       bottom:300px;
+       right: 50px;
+       
+} 
+          #_img2{
+             font-family:lobster;
+             font-size: 150px;  
+    
+             position:absolute;
+             width: 100%;
+             color:rgba(172, 205, 221, 0.5);
+             text-shadow: rgb(255, 255, 255) 40px 40px 1px;
+             left:5%;
+             }
+
+    #img3{
+       width: 80%;
+       position:relative;
+       bottom:350px;
+       right: 50px;
+}
+       #_img3{
+             font-family:lobster;
+             font-size: 150px;  
+    
+             position:absolute;
+             left:3%;
+             width: 100%;
+             color:rgba(172, 205, 221, 0.5);
+             text-shadow: rgb(255, 255, 255) 40px 40px 1px;
+            }
